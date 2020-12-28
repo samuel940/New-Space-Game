@@ -57,6 +57,7 @@ function draw() {
   if(enemyShipGroup.isTouching(laserGroup)) {
     enemyShipGroup.destroyEach();
     score += 100;
+    laserGroup.destroyEach();
     explosionSound.play();
     extraLife = Math.round(random(1,10));
     if (extraLife === 10) {
