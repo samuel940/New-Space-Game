@@ -71,6 +71,7 @@ function draw() {
   if (enemyShipGroup.isTouching(bottomEdge)) { 
       lives -= 1;
       enemyShipGroup.destroyEach();
+      laserGroup.destroyEach();
       ship.destroy();
       explosionSound2.play();
       ship = createSprite(width/2,height-50,50,50);
