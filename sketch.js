@@ -109,7 +109,7 @@ if (gameState === "end") {
 function createEnemy() {
 
   if (frameCount%60 === 0 && gameState === "play") {
-    enemyship = createSprite(random(50,width-50),0,20,20)
+    enemyship = createSprite(random(50,width-50),100,20,20)
     enemyship.addImage("enemy",enemyship_img);
     enemyship.velocityY = 8 + score/500;
     //console.log(enemyship.velocityY);
