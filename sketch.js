@@ -42,7 +42,7 @@ function draw() {
   if(keyDown(RIGHT_ARROW)) {
     ship.x += 8;
   }
-  if (keyWentDown(UP_ARROW) || touches.length > 0) {
+  if (keyWentDown(UP_ARROW) || touches.length > 10) {
     laser = createSprite(ship.x,ship.y - 50,10,50);
     laserGroup.add(laser);
     laser.addImage("laser", laser_img);
